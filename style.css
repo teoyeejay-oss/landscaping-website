@@ -7,6 +7,8 @@
 body{
     line-height: 1.5;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color:#1f2937;
+    background-color:#f3f7f0;
 }
 
 img{
@@ -26,4 +28,29 @@ h2 {
 h3 { 
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+
+.get-a-free-quote{
+   display:inline-block;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   font-weight: 600;
+   background-color:#2e7d32;
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+}
+
+.hero{
+  background-color: #e3eedc;
+  padding:3rem 1.5rem;
+}
+
+.services{
+  padding:3rem 1.5rem;
+}
+
+.why-choose-us{
+  padding:3rem 1.5rem;
 }
