@@ -42,6 +42,18 @@ h3 {
    text-decoration: none;
 }
 
+.get-a-free-quote:hover {
+   background-color:#1b5e20;
+}
+
+.get-a-free-quote:active {
+   transform: scale(0.98);
+}
+
+.get-a-free-quote:focus {
+   outline:3px solid #1f2937;
+}
+
 .hero{
   background-color: #e3eedc;
   padding:3rem 1.5rem;
