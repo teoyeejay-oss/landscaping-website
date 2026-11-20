@@ -1,4 +1,14 @@
 /* styles go here */
+:root {
+  --color-primary: #2e7d32;
+  --color-primary-dark:#1b5e20;      /* 你按钮悬停用的那个深绿，从你的 CSS 里复制 */
+  --color-text: #1f2937;
+  --color-bg: #f3f7f0;
+  --color-hero-bg: #e3eedc;
+  --color-border: rgba(66, 131, 66, 0.342);
+  --color-white: #ffffff;
+}
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -7,8 +17,8 @@
 body{
     line-height: 1.5;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color:#1f2937;
-    background-color:#f3f7f0;
+    color:var(--color-text);
+    background-color:var(--color-bg);
 }
 
 img{
@@ -35,15 +45,15 @@ h3 {
    text-transform: uppercase;
    letter-spacing: 0.05em;
    font-weight: 600;
-   background-color:#2e7d32;
-   color: white;
+   background-color:var(--color-primary);
+   color: var(--color-white);
    padding: 0.75rem 1.5rem;
    border-radius: 0.5rem;
    text-decoration: none;
 }
 
 .get-a-free-quote:hover {
-   background-color:#1b5e20;
+   background-color:var(--color-primary-dark);
    text-decoration: none;
    color:white;
 }
@@ -57,7 +67,7 @@ h3 {
 }
 
 .hero{
-  background-color: #e3eedc;
+  background-color: var(--color-hero-bg);
   padding:3rem 1.5rem;
 }
 
@@ -87,7 +97,7 @@ nav ul{
 }
 
 nav a{
-  color:#1f2937;
+  color:var(--color-text);
   text-decoration: none;
 }
 
@@ -105,7 +115,7 @@ header{
   position:sticky;
   top:0;
   z-index:10;
-  background-color:#f3f7f0;
+  background-color:var(--color-bg);
 }
 
 @media (min-width: 48rem) {
@@ -121,8 +131,8 @@ header{
 }
 
 .services-list li{
-  background-color: white;
-  border: 1px solid rgba(66, 131, 66, 0.342);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
