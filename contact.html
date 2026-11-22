@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | Fresh Lawn Co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Fresh Lawn Co.</a>
+        <nav>
+            <ul>
+                <li><a href="service.html">Our Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#why-choose-us">Why choose us</a></li>
+                <li><a href="contact.html" class="get-a-free-quote">Get a Free Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <h1>Tell Us About Your Yard</h1>
+        <p>Share your contact details and the service you need, and we'll reply within one business day.</p>
+        <form action="#" method="post" class="quote-form">
+            <div>
+                <label for="full_name">Full name: </label>
+                <input type="text" id="full_name" name="full_name">
+            </div>
+            <div>
+                <label for="phone_number">Phone number:</label>
+                <input type="tel" id="phone_number" name="phone_number">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                    <option value="lawn_mowing">Lawn Mowing</option>
+                    <option value="lawn_maintenance">Lawn Maintenance</option>
+                    <option value="edging_and_trimming">Edging and Trimming</option>
+                    <option value="yard_cleanup">Yard Cleanup</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="additional_information">Additional information: </label>
+                <textarea id="additional_information" name="additional_information" rows="8"></textarea>
+            </div>
+            <fieldset>
+                <legend>How to contact you?</legend>
+
+                <div>
+                    <input type="radio" id="phone_call" name="contact_method" value="phone_call">
+                    <label for="phone_call">Phone call</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="contact_email" name="contact_method" value="email">
+                    <label for="contact_email">Email</label>
+                </div>
+            </fieldset>
+            <button type="submit"  class="get-a-free-quote">Get my free quote</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="tel:+15125550123">(512) 555-0123</a>
+        <ul>
+            <li>1234 Example Lane, Austin, TX 78701</li>
+            <li>Mon to Fri: 8:00 am to 6:00 pm</li>
+            <li>Sat: 8:00 am to 2:00 pm</li>
+            <li>Sun: Closed</li>
+        </ul>
+        <p>Sample content for a portfolio concept project. Not a real business.</p>
+    </footer>
+
+</body>
+
+</html>

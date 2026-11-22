@@ -1,7 +1,8 @@
 /* styles go here */
 :root {
   --color-primary: #2e7d32;
-  --color-primary-dark:#1b5e20;      /* 你按钮悬停用的那个深绿，从你的 CSS 里复制 */
+  --color-primary-dark: #1b5e20;
+  /* 你按钮悬停用的那个深绿，从你的 CSS 里复制 */
   --color-text: #1f2937;
   --color-bg: #f3f7f0;
   --color-hero-bg: #e3eedc;
@@ -9,25 +10,25 @@
   --color-white: #ffffff;
 }
 
-*{
-    box-sizing: border-box;
-    margin:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    line-height: 1.5;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color:var(--color-text);
-    background-color:var(--color-bg);
+body {
+  line-height: 1.5;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
-img{
-display:block;
-max-width: 100%;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 h1 {
-  font-size: clamp(1.75rem,5vw,2.5rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
@@ -35,105 +36,180 @@ h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-h3 { 
+
+h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.get-a-free-quote{
-   display:inline-block;
-   text-transform: uppercase;
-   letter-spacing: 0.05em;
-   font-weight: 600;
-   background-color:var(--color-primary);
-   color: var(--color-white);
-   padding: 0.75rem 1.5rem;
-   border-radius: 0.5rem;
-   text-decoration: none;
+.get-a-free-quote {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 .get-a-free-quote:hover {
-   background-color:var(--color-primary-dark);
-   text-decoration: none;
-   color:white;
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+  color: white;
 }
 
 .get-a-free-quote:active {
-   transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .get-a-free-quote:focus {
-   outline:3px solid #1f2937;
+  outline: 3px solid #1f2937;
 }
 
-.hero{
+.hero {
   background-color: var(--color-hero-bg);
-  padding:3rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
-.services{
-  padding:3rem 1.5rem;
+.services {
+  padding: 3rem 1.5rem;
 }
 
-.why-choose-us{
-  padding:3rem 1.5rem;
+.why-choose-us {
+  padding: 3rem 1.5rem;
 }
 
-.logo{
- text-decoration: none;
- color:#2e7d32;
- font-weight:700;
- font-size:2rem;
+.logo {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-nav a{
-  color:var(--color-text);
+nav a {
+  color: var(--color-text);
   text-decoration: none;
 }
 
-nav a:hover{
-text-decoration: underline;
-color:#2e7d32;
+nav a:hover {
+  text-decoration: underline;
+  color: #2e7d32;
 }
 
-header{
+header {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding:1rem 1rem;
-  position:sticky;
-  top:0;
-  z-index:10;
-  background-color:var(--color-bg);
+  padding: 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-bg);
 }
 
 @media (min-width: 48rem) {
-  header { justify-content: space-between; }
+  header {
+    justify-content: space-between;
+  }
 }
 
-.services-list{
-  list-style:none;
-  padding:0;
+.services-list {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
 }
 
-.services-list li{
+.services-list li {
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-page {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 2rem
+}
+
+.quote-form div {
+  margin-bottom: 0.5rem;
+}
+
+.quote-form label {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.quote-form fieldset label {
+  display: inline;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="tel"],
+.quote-form input[type="email"],
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: var(--color-border);
+  border-radius: 0.5rem;
+  font: inherit;
+  background-color: var(--color-white);
+}
+
+.quote-form input[type="text"]:focus,
+.quote-form input[type="tel"]:focus,
+.quote-form input[type="email"]:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.quote-form fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.quote-form legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.quote-form fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quote-form input[type="radio"]{
+  accent-color: var(--color-primary);
+}
+
+.quote-form button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  margin: 1px;
 }
